@@ -7,6 +7,24 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+/* Custom */
+img.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+img.mugshot {
+    width: 66%;
+    -webkit-clip-path: circle(66% at 50% 50%);
+    clip-path: circle(66% at 50% 50%);
+    margin-top: 10px;
+}
+.center-button {
+    margin-left: auto;
+    margin-right: auto;
+    width: 10em;
+}
+
 /* Reset */
 
 	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -2266,7 +2284,7 @@
 
 	ul {
 		list-style: disc;
-		margin: 0 0 2em 0;
+		margin: 0 0 .75em 0;
 		padding-left: 1em;
 	}
 
@@ -2618,7 +2636,7 @@
 		input[type="button"].next,
 		button.next,
 		.button.next {
-			padding-right: 4.5em;
+			/*padding-right: 4.5em;*/
 			position: relative;
 		}
 
@@ -2645,7 +2663,7 @@
 				right: 1.5em;
 				top: 0;
 				vertical-align: middle;
-				width: 36px;
+				width: 0px;
 			}
 
 			input[type="submit"].next:before,
@@ -2685,7 +2703,7 @@
 				input[type="button"].next,
 				button.next,
 				.button.next {
-					padding-right: 5em;
+					/*padding-right: 5em;*/
 				}
 
 			}
@@ -3445,7 +3463,7 @@
 			display: block;
 			height: 100%;
 			left: 0;
-			opacity: 0.85;
+			opacity: 0.9;
 			position: absolute;
 			top: 0;
 			width: 100%;
@@ -3495,7 +3513,7 @@
 			}
 
 				#banner > .inner .content > * {
-					margin-left: 1.5em;
+					margin-left: auto;
 					margin-bottom: 0;
 				}
 
@@ -3511,9 +3529,9 @@
 				}
 
 		#banner.major {
-			height: 75vh;
+			height: 100vh;
 			min-height: 30em;
-			max-height: 50em;
+			max-height: 60em;
 		}
 
 			#banner.major.alt {
@@ -3785,7 +3803,7 @@
 		}
 
 		#wrapper > * > .inner {
-			padding: 4em 0 2em 0 ;
+			padding: 1.5em 0 2em 0 ;
 			margin: 0 auto;
 			max-width: 65em;
 			width: calc(100% - 6em);
