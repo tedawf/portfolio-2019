@@ -22,7 +22,7 @@
 				<!-- Header -->
 				<!-- Note: The "styleN" class below should match that of the banner element. -->
 					<header id="header" class="alt style1">
-						<a href="index.html" class="logo"><strong>Click here</strong> <span>to go back</span></a>
+						<a href="index.html#projects" class="logo"><strong>Back</strong> <span>to main</span></a>
 						<nav>
 							<a href="#menu">Navigate</a>
 						</nav>
@@ -72,17 +72,17 @@
 							<section id="one">
 								<div class="inner">
 									<header class="major">
-										<h2>Gameplay</h2>
+										<h2>Gameplay overview</h2>
 									</header>
-									<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna.</p>
+									<p>Phase is a third person shooter set in a semi-open world environment. You play as Hana, an undercover spy at Acre Industries that is on the run after the company discovers her identity. When in combat, Hana must use the surrounding environment props to take cover from the enemy and return fire in order to finish her mission and escape.</p>
 								</div>
 							</section>
 
 						<!-- Two -->
 							<section id="two" class="spotlights">
 								<section>
-									<a href="images/3cs.gif" class="image">
-										<img src="images/3cs.gif" alt="" data-position="center center" />
+									<a class="image">
+									<div style='position:relative;padding-bottom:76%'><iframe src='https://gfycat.com/ifr/PolishedUltimateKinkajou' frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0;' allowfullscreen></iframe></div>
 									</a>
 									<div class="content">
 										<div class="inner">
@@ -94,41 +94,42 @@
 									</div>
 								</section>
 								<section>
-									<a href="images/cover.gif" class="image">
-										<img src="images/cover.gif" alt="" data-position="top center" />
+									<a class="image">
+									<div style='position:relative;padding-bottom:76%'><iframe src='https://gfycat.com/ifr/RareShyBee' frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0;' allowfullscreen></iframe></div>
 									</a>
 									<div class="content">
 										<div class="inner">
 											<header class="major">
 												<h3>The Cover System</h3>
 											</header>
-											<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa sed magna lacinia magna pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis tempus.</p>
+											<p>I'm pretty proud of this one. It took weeks and weeks of tweaking, redoing and trying different approaches to get it working smoothly. First, the cover system uses an invisible offset "helper" to check if the cover is of correct size. Then the helper stays near the wall to determine if the player can continue moving. It also detect whether its a half wall or a full wall, so the player will be in different cover animations. Since the helper do all the dirty work for the player first, this results in a very smooth and non-jerking in-cover movement as the player follows the helper along ANY wall.</p>
 										</div>
 									</div>
 								</section>
 								<section>
-									<a href="generic.html" class="image">
-										<img src="images/pic10.jpg" alt="" data-position="25% 25%" />
+									<a class="image">
+										<div style='position:relative;padding-bottom:76%'><iframe src='https://gfycat.com/ifr/UnsungQueasyBlesbok' frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0;' allowfullscreen></iframe></div>
 									</a>
 									<div class="content">
 										<div class="inner">
 											<header class="major">
 												<h3>Hit and Damage UI Feedback</h3>
 											</header>
-											<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa sed magna lacinia magna pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis tempus.</p>
+											<p>Our designer wanted a minimalistic and clean UI for our game, so I referenced some shooting games such as Call of Duty and The Last of Us. Everytime the player takes damage, the screen will flash red and tint red based on the player's health. The crosshair indicates when hitting an enemy and when the player dies, I also made a death effect similar to GTA's. I also had our ammo bar under the crosshair for easy accessibility.</p>
 										</div>
 									</div>
 								</section>
 								<section>
-									<a href="images/lighting.gif" class="image">
-										<img src="images/lighting.gif" alt="" data-position="top center" />
+									<a class="image">
+									<div style='position:relative;padding-bottom:57%'><iframe src='https://gfycat.com/ifr/AncientTeemingAmericanblackvulture' frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0;' allowfullscreen></iframe></div>
+									<p><i> If the gif is too fast, click on it. Gfycat doesn't like my gifs</i> :(</p>
 									</a>
 									<div class="content">
 										<div class="inner">
 											<header class="major">
 												<h3>The Lighting of Phase</h3>
 											</header>
-											<p>Together with my 3D environmental artist, we did a lot of research and experimenting with Unity's lighting system as there was not much examples on it. We keep fine-tuning settings to remove lighting artifacts and get the exact visuals we wanted.</p>
+											<p>Together with my 3D environmental artist, we did a lot of researching and countless experiments with Unity's lighting system as there were not many advanced examples or resources online. We kept fine-tuning every setting to remove undesired lighting artifacts and optimised our models and meshes for baking the lighting until we got the exact visuals we wanted Phase to have.<br><br>Click <a href="http://contactdaniellye.wixsite.com/daniel-lye-artworks">here</a> for his portfolio!</p>
 										</div>
 									</div>
 								</section>
@@ -138,12 +139,14 @@
 							<section id="three">
 								<div class="inner">
 									<header class="major">
-										<h2>Massa libero</h2>
+										<h2>Try out the game!</h2>
 									</header>
-									<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet pharetra et feugiat tempus.</p>
+									<br>
+									<b>Download Phase</b>
 									<ul class="actions">
-										<li><a href="generic.html" class="button next">Get Started</a></li>
+										<li><a href="https://docs.google.com/uc?id=0B-RwSvXtaqNBc3lxUDRaN21FZE0&export=download" class="button icon fa-download">.exe (327MB)</a><li>
 									</ul>
+									<i>Note: You are about to download a zipped folder. Please use programs like Window Explorer, <a href="http://www.rarlab.com/download.htm">WinRAR</a> or <a href="http://www.7-zip.org/download.html">7zip</a> to unzip and extract the files.</i>
 								</div>
 							</section>
 
@@ -201,7 +204,7 @@
 								<li><a href="https://www.linkedin.com/in/aweife/" class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
 							</ul>
 							<ul class="copyright">
-								<li>&copy; 2017 Aweife's Portfolio</li><li>Website Design: <a href="https://html5up.net">HTML5 UP</a></li>
+								<li>&copy; <a href="index.html#">2017 Aweife's Portfolio</a></li><li>Website Design: <a href="https://html5up.net">HTML5 UP</a></li>
 							</ul>
 						</div>
 					</footer>
