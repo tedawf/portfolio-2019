@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Phase</title>
+		<title>Horror in SP</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -31,9 +31,9 @@
 				<!-- Menu -->
 					<nav id="menu">
 						<ul class="links">
+							<li><a href="phase.html#">Phase</a></li>
 							<li><a href="abc.html#">aBotcalypse</a></li>
 							<li><a href="boing.html#">BOING!</a></li>
-							<li><a href="horrorsp.html#">Horror in SP</a></li>
 						</ul>
 						<ul class="actions horizontal">
 								<li><a href="aboutme.html#more" class="button fit">About Me</a></li>
@@ -46,17 +46,17 @@
 					<section id="banner" class="style1">
 						<div class="inner">
 							<span class="image">
-								<img src="images/phase_banner.jpg" alt="" />
+								<img src="images/horrorsp_banner.png" alt="" />
 							</span>
 							<header class="major">
-								<h1>Phase</h1>
+								<h1>Horror in SP</h1>
 							</header>
 							<div class="content">
 							<ul>
-								<li>Third-Person Controller</li>
-								<li>Cover Shooting Mechanic</li>
-								<li>Player UI Feedback</li>
-								<li>Environmental Lighting</li>
+								<li>Close representation of SP Design School</li>
+								<li>Linear walkthrough gameplay</li>
+								<li>Main focus on art assets and props layout</li>
+								<li>Using Unreal Engine's blueprint system</li>
 							</ul>
 							</div>
 						</div>
@@ -66,67 +66,46 @@
 					<div id="main">
 
 						<!-- One -->
-							<section id="one">
-								<div class="inner">
-									<header class="major">
-										<h2>Gameplay overview</h2>
-									</header>
-									<p>Phase is a third person shooter set in a large city environment. Hana, an undercover spy at Acre Industries, is on the run after the company discovers her identity. When in combat, Hana must use the surrounding environment props to take cover from the enemy and return fire in order to finish her mission and escape.</p>
-								</div>
-							</section>
+						<section id="one">
+							<div class="inner2">
+								<header class="major"><h2>Gameplay video</h2></header>
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/L9KxIs4cINk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							</div>
+						</section>
 
 						<!-- Two -->
 							<section id="two" class="spotlights">
 								<section>
 									<a class="image">
-									<div style='position:relative;padding-bottom:76%'><iframe src='https://gfycat.com/ifr/PolishedUltimateKinkajou' frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0;' allowfullscreen></iframe></div>
+									<div style='position:relative;'><img src="images/horrorsp1.jpg" alt="" /></div>
 									</a>
 									<div class="content">
 										<div class="inner">
 											<header class="major">
-												<h3>The 3Cs: Character, Controls and Camera.</h3>
+												<h3>The Concept</h3>
 											</header>
-											<p>When I was creating the third-person controller, the camera was difficult to get it feeling right. I researched and took reference from other similar games such as The Last of Us, The Division and Metal Gear Solid on how smoothly their camera moves, especially with wall and mesh collisions. The character will always walk where the camera is facing so I had to make sure the character behaved correctly when player moves in all directions. The last bit was syncing the animations with the code, so we could quickly change the speeds of the character without redo-ing the animations.</p>
+											<p>When me and my artist started out, we were looking for inspiration. The gameplay was not the main focus,
+												instead we want to take this chance to learn about Unreal Engine as well as Maya. We quickly decided to replicate
+												our studio, meaning we have many real life objects to take reference from and also it would be easy for our evaluation
+												later on as everyone was familiar with the layout.
+											</p>
 										</div>
 									</div>
 								</section>
 								<section>
 									<a class="image">
-									<div style='position:relative;padding-bottom:76%'><iframe src='https://gfycat.com/ifr/RareShyBee' frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0;' allowfullscreen></iframe></div>
+									<div style='position:relative;'><img src="images/horrorsp2.png" alt="" /></div>
 									</a>
 									<div class="content">
 										<div class="inner">
 											<header class="major">
-												<h3>The Cover System</h3>
+												<h3>The Process</h3>
 											</header>
-											<p>I'm pretty proud of this one. It took weeks and weeks of tweaking, redoing and trying different approaches to get it working smoothly. First, the cover system uses an invisible offset "helper" to check if the cover is of correct size. Then the helper stays near the wall to determine if the player can continue moving. It also detect whether its a half wall or a full wall, so the player will be in different cover animations. Since the helper do all the dirty work for the player first, this results in a very smooth and non-jerking in-cover movement as the player follows the helper along ANY wall.</p>
-										</div>
-									</div>
-								</section>
-								<section>
-									<a class="image">
-										<div style='position:relative;padding-bottom:76%'><iframe src='https://gfycat.com/ifr/UnsungQueasyBlesbok' frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0;' allowfullscreen></iframe></div>
-									</a>
-									<div class="content">
-										<div class="inner">
-											<header class="major">
-												<h3>Hit and Damage UI Feedback</h3>
-											</header>
-											<p>Our designer wanted a minimalistic UI for our game, so I took some reference of shooting games such as Call of Duty and The Last of Us. Everytime the player takes damage, the screen will flash red and tint red based on the player's health. The crosshair indicates when hitting an enemy and when the player dies, I also made a death effect similar to GTA's. I also had our ammo bar under the crosshair for easy readability.</p>
-										</div>
-									</div>
-								</section>
-								<section>
-									<a class="image">
-									<div style='position:relative;padding-bottom:57%'><iframe src='https://gfycat.com/ifr/AncientTeemingAmericanblackvulture' frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0;' allowfullscreen></iframe></div>
-									<p><i> If the gif is too fast, change the quality to HD or the playback speed.</i></p>
-									</a>
-									<div class="content">
-										<div class="inner">
-											<header class="major">
-												<h3>The Lighting of Phase</h3>
-											</header>
-											<p>Together with my 3D environmental artist, we did a lot of researching and countless experiments with Unity's lighting system as there were not many advanced examples or resources online. We kept fine-tuning every setting to remove undesired lighting artifacts and optimised our models and meshes for baking the lighting until we got the exact visuals we wanted Phase to have.<br><br>Click <a href="http://contactdaniellye.wixsite.com/daniel-lye-artworks">here</a> for his portfolio!</p>
+											<p>My artist quickly churned out props after props while I familiarise myself with the blueprint system. As it turns
+												out, we have much to learn about the importing process, creating of UVs and gameplay scripting. Tackling a new game 
+												engine was not an easy task and we still have to work on the environment lighting. Lucky for us, Unreal Engine has a very
+												robust lighting system and in the end we managed to create very closely to what we had in mind.
+											</p>
 										</div>
 									</div>
 								</section>
@@ -139,9 +118,9 @@
 										<h2>Try the game!</h2>
 									</header>
 									<br>
-									<b>Download Phase</b>
+									<b>Download Horror in SP</b>
 									<ul class="actions">
-										<li><a href="https://drive.google.com/uc?id=1_mhi5cdio4HTIoNc1xARAVRyEmlMGWt8&export=download" class="button icon fa-download">.exe (327MB)</a><li>
+										<li><a href="https://drive.google.com/uc?authuser=0&id=1Sr8b0iuSYY3zyB6CFUqWvZDLlattrndU&export=download" class="button icon fa-download">.exe (430MB)</a><li>
 									</ul>
 									<i>Note: You are about to download a zipped folder. Please use programs like Window Explorer, <a href="http://www.rarlab.com/download.htm">WinRAR</a> or <a href="http://www.7-zip.org/download.html">7zip</a> to unzip and extract the files.</i>
 								</div>
