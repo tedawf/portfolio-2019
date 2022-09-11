@@ -1,2 +1,4 @@
 # aweife.github.io (Old)
-My portfolio website made in 2019 before I started university
+Made with a template from https://html5up.net/ that I customised for my use.
+
+Hosted on Github Pages as a separate project site.
